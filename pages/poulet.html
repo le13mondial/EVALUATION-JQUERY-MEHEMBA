@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+   <link rel="stylesheet" href="../CSS/poulet.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    
+    <nav class="navbar navbar-expand-lg bg-ligth sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand cameroon" href="../pages/camer.html">
+           <strong>CammerResto</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header text-dark">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span>CammerResto</span></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item ">
+                  <a class="nav-link active px-4 gray" aria-current="page" href="../index.html" style="color: white;">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-4" href="#encre0">Plats</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-4" href="#encre1">pourquoi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-4" href="#encre2">Menus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-4" href="#encre3">Commandes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-4" href="#encre4">About</a>
+                  <li class="nav-item">
+                    <li class="nav-item">
+                     
+       <button class="btn  float-center"  id="liveToastBtn"><i class="fa-solid fa-cart-shopping fa "></i>0</button>
+           
+      <div class="toast-container position-fixed top-0 start-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <h5><strong class="me-auto"> le nombre de commande dans la plateforme</strong></h5>
+              <small></small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body text-center">
+             <h1><span class="like">0</span></h1>
+            </div>
+          </div>
+      </div>
+      
+                    </li>
+                  </li>
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- BODY -->
+
+<div class="container">
+    <main class="row justify-content-center">
+        <section class="col-lg-6 col-md-12 mt-5">
+            <div class="card card mb-3 ">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <a href="../index.html"><img src="../image/Pouletdg.jpg"  class="img-fluid rounded-start" alt="..."></a> 
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h1 class="card-title"><strong class="poulet">POULET DG</strong></h1>
+                      <p class="card-text"><span class="prix">10000FCA <strike>20000FCFA</strike></span><span  class="promo">promo</span>
+                     <h5 style="color: gray;"  class="dixmille">vous enonomisez <strong style="color:black ;">10000FCA</strong></h5><br>
+                     <h5 style="color: gray;" class="dixmille">Livraison gratuit sur 1h</h5>
+                     <h5 style="color: gray;" class="dixmille">Retour gratuit sur 30jours</h5>
+                     <h5 style="color: gray;" class="dixmille">Paiement à la livraison</h5><br>
+                     <h5 style="color: gray;" class="dixmilles">Quantité</h5>
+                    </p>
+                      
+                    <p class="p">
+                      <label for="number"></label>
+                      <input type="number" id="number" class="number" ><span class="total"><strong> TOTAL: <span style="color: black;font-size: 200%;"><span>1</span>0000FCA</span>FCFA</strong></span>
+                      <!-- <button class="btn btn-primary">J'aime <span>0</span></button> -->
+                    </p>
+
+                  <!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary but" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ <span class=" payer">Payer Maintenant</span> 
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Detail sur la carte</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <h5>VOUS ALLEZ PAYER AU TOTAL:</h5>
+       <main class="row">
+              <div class="col-lg-6">
+                <label for="nom" class="form-label"></label>
+                <input type="text" class="form-control" id="nom" placeholder="Entrer votre nom">
+                <div id="errorNom" class="invalid-feedback"></div>
+              </div>
+              <div class="col-lg-6">
+                <label for="nom" class="form-label"></label>
+                <input type="text" class="form-control" id="nom" placeholder="Entrer votre Adresse">
+                <div id="errorNom" class="invalid-feedback"></div>
+              </div>
+              <div class="col-lg-6">
+                <label for="nom" class="form-label"></label>
+                <input type="text" class="form-control" id="nom" placeholder="Entrer votre numero">
+                <div id="errorNom" class="invalid-feedback"></div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Mode paiement</option>
+                  <option value="1">Orange Money</option>
+                  <option value="2">Mtn Mobile Money</option>
+                  <option value="3">Express Union Money</option>
+                </select>
+              </div>
+       </main>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100">Payer</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </section>
+    </main>
+</div>
+
+
+
+  
+  <script src="../JS/bootstrap.bundle.js"></script>
+  <script src="../JS/jquery.js"></script>
+  <script src="../JS/all.min.js"></script>
+  <script src="../JS/poulet.js"></script>
+</body>
+</html>
